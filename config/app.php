@@ -58,6 +58,18 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | SSL Certificate
+    |--------------------------------------------------------------------------
+    | [$rachow]
+    | This is not necessary but for https to work, servers must verify 
+    | each other, leave blank to refuse the need for verification.    
+    |
+    */
+
+    'ssl_cert' => __DIR__ . '/../backend/cert/cacert.pem',
+
+    /*
+    |--------------------------------------------------------------------------
     | Application Timezone
     |--------------------------------------------------------------------------
     |
