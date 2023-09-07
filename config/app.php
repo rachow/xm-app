@@ -61,12 +61,26 @@ return [
     | SSL Certificate
     |--------------------------------------------------------------------------
     | [$rachow]
+    |
     | This is not necessary but for https to work, servers must verify 
     | each other, leave blank to refuse the need for verification.    
     |
     */
 
     'ssl_cert' => __DIR__ . '/../backend/cert/cacert.pem',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Symbols
+    |--------------------------------------------------------------------------
+    | [$rachow]
+    | 
+    | Symbols are essential for users to be able to compare and analyse the markets
+    | based on the OHLCV (Open,High,Low,Close,Volume) data 
+    |
+    */
+
+    'symbol_url' => env('APP_SYMBOL_URL', 'http://localhost:9090/storage/nasdaq-listed_json.json');
 
     /*
     |--------------------------------------------------------------------------
