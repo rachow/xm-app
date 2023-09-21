@@ -24,7 +24,7 @@
 */
 
 const ws_port = '6602';
-const ws_url = 'ws://localhost:' + ws_port;
+const ws_url = 'ws://' + process.env.MIX_APP_DOMAIN + ':' + ws_port;
 
 
 
